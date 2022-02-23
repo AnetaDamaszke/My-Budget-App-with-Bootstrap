@@ -184,7 +184,7 @@ body {
     border: 2px solid #CA2ACD;
 } 
 
-.registration-button {
+.form-button {
     margin-top: 1rem;
     padding: .6rem 1.5rem;
     width: 100%;
@@ -205,3 +205,9 @@ body {
     background-color: #000D6B;
 }
 
+/** Login **/
+
+.login {
+    background-color: #F9F9F9;
+    height: calc(100vh - 135px);
+}
