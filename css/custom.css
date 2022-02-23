@@ -51,7 +51,7 @@ body {
     color: #000D6B !important;
     border: 2px solid rgba(255, 255, 255, 0);
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
     padding: .6rem 1.5rem !important;
 }
 
@@ -102,10 +102,12 @@ body {
 .intro-header {
     font-weight: 600;
     font-size: 32px;
+    margin-bottom: 1rem;
 }
 
 .intro-text {
     font-size: 16px;
+    margin-bottom: 2rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -124,3 +126,67 @@ body {
         font-size: 18px;
     }
 }
+
+/** Registration **/
+
+.registartion-box {
+    background-color: #A5A6F6;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 40px 40px;
+    margin-bottom: 3rem;
+}
+
+.registration-img {
+    width: 115%;
+    margin-left: 0;
+}
+
+.registration-header {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .registartion-box {
+        padding: 40px 80px;
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    .registration-img {
+        width: 115%;
+        margin-left: -15%;
+    }
+}
+
+.registration .form-group {
+    margin-bottom: 1rem;
+}
+
+.registration .form-control-label {
+    margin-bottom: .35rem;
+}
+
+.registration .form-control {
+    font-size: 14px;
+    color: #000D6B;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.registration .form-control:focus {
+    border: 2px solid #CA2ACD;
+} 
+
+.registration-button {
+    margin-top: 1rem;
+    padding: .6rem 1.5rem;
+    width: 100%;
+    background-color: #CA2ACD;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
