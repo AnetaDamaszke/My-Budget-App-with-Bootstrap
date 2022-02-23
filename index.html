@@ -55,15 +55,16 @@
                                     <input type="email" id="email" placeholder="np. jan@kowalski.com" class="form-control"/>
                                 </div>
                                 <div class="form-group">
-                                    <label for="password" class="form-control-label">Hasło</label>
-                                    <input type="password" id="password" class="form-control"/>
+                                    <label for="password1" class="form-control-label">Hasło</label>
+                                    <input type="password" id="password1" class="form-control"/>
                                 </div>
                                 <div class="form-group">
                                     <label for="password2" class="form-control-label">Powtórz hasło</label>
                                     <input type="password" id="password2" class="form-control"/>
                                 </div>
+                                <div id="statement" class="registration-statement"></div>
                                 <div class="text-center">
-                                    <button class="btn text-uppercase text-white registration-button">Załóż konto</button>
+                                    <button type="button" class="btn text-uppercase text-white registration-button" onclick="validateForm()">Załóż konto</button>
                                 </div>
                             </form>
                         </div>
@@ -77,5 +78,6 @@
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="js/registration.js"></script>
     </body>
 </html>

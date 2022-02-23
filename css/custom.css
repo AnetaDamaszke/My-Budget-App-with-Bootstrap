@@ -145,12 +145,12 @@ body {
 .registration-header {
     font-weight: 700;
     font-size: 16px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 @media only screen and (min-width: 768px) {
     .registartion-box {
-        padding: 40px 80px;
+        padding: 40px 40px;
     }
 }
 
@@ -158,6 +158,10 @@ body {
     .registration-img {
         width: 115%;
         margin-left: -15%;
+    }
+
+    .registartion-box {
+        padding: 40px 80px;
     }
 }
 
@@ -188,5 +192,9 @@ body {
     border-radius: 5px;
     font-weight: 700;
     font-size: 16px;
+}
+
+.registration-statement {
+    
 }
 
