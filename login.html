@@ -22,9 +22,9 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navContent">
                     <div class="navbar-nav">
-                        <a href="#" class="nav-item nav-link menu-link">Home</a>
-                        <a href="#" class="nav-item nav-link ms-2 ms-lg-3 menu-link">O porgramie</a>
-                        <a href="#" class="nav-item nav-link ms-2 ms-lg-3 active menu-link">Zaloguj</a>
+                        <a href="index.html" class="nav-item nav-link menu-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link ms-2 ms-lg-3 menu-link">O porgramie</a>
+                        <a href="login.html" class="nav-item nav-link ms-2 ms-lg-3 active menu-link">Zaloguj</a>
                     </div>
                 </div>
             </div>
@@ -33,24 +33,24 @@
         <!-- Login -->
         <section class="login">
             <div class="container">
-                <img src="img/BUDGETTING.png" alt="budżet domowy" />
-                <div class="login-box">
-                    <h2 class="text-center text-uppercase registration-header">Nie masz konta? Zarejestruj się:</h2>
+                <div class="m-auto login-box">
+                    <h2 class="text-center text-uppercase registration-header">Logowanie:</h2>
                     <form action="">
                         <div class="form-group">
                             <label for="userEmail" class="form-control-label">E-mail</label>
                             <input type="email" id="userEmail" class="form-control"/>
                         </div>
                         <div class="form-group">
-                            <label for="userPassword" class="form-control-label">E-mail</label>
-                            <input type="email" id="userPassword" class="form-control"/>
+                            <label for="userPassword" class="form-control-label">Hasło</label>
+                            <input type="password" id="userPassword" class="form-control"/>
                         </div>
                         <div id="loginStatement" class="login-statement"></div>
                         <div class="text-center">
-                            <button type="button" class="btn text-uppercase text-white form-button" onclick="validateForm()">Załóż konto</button>
+                            <button type="button" class="btn text-uppercase text-white form-button" onclick="checkUser()">Zaloguj</button>
                         </div>
                     </form>
                 </div>
+                <img class="img-fluid login-img" src="img/BUDGETTING.png" alt="budżet domowy" />
             </div>
         </section>
 
