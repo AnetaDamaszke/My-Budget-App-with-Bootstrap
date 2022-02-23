@@ -1,5 +1,44 @@
 /** Global styles **/
 
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1.4em;
+    vertical-align: baseline;
+    text-decoration: none;
+    outline: 0;
+    }
+
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*{
+    image-rendering: -webkit-optimize-contrast;
+}
+
+:root {
+    --color-primary: #A5A6F6;
+    --color-accent: #CA2ACD;
+    --color-light-green: #99DDCC;
+    --color-dark-green: #4FC6A8;
+    --color-dark: #000D6B;
+    --color-light-grey: #F9F9F9;
+    --color-grey: #7D7D7D; 
+    --color-dark-grey: #3D3D3D;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+/** Navbar **/
+
 .menu {
     box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.14);
 }
