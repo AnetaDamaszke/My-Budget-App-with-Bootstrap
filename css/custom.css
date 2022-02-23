@@ -40,5 +40,50 @@ body {
 /** Navbar **/
 
 .menu {
+    height: 82px;
     box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.14);
+}
+
+.menu-link {
+    color: #000D6B !important;
+    border: 2px solid rgba(255, 255, 255, 0);
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: .6rem 1.5rem !important;
+}
+
+.menu-link:hover {
+    border: 2px solid #4FC6A8;
+    border-radius: 3px;
+}
+
+.menu-link.active {
+    border: 2px solid #4FC6A8;
+    border-radius: 3px;
+}
+
+.menu-link.active:hover {
+    background-color: #4FC6A8;
+    color: white !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        height: 56px;
+        box-shadow: none;
+    }
+
+    .menu-link {
+        text-align: center;
+        margin-top: 1rem;
+    }
+}
+
+.navbar-toggler {
+    color: #4FC6A8;
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.1rem;
 }
