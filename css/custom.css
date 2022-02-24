@@ -290,8 +290,9 @@ body {
     color: #000D6B;
     font-weight: 700;
     font-size: 16px;
-    padding: .6rem 1.5rem;
+    padding: .6rem 2.5rem;
     transition: .3s ease-in-out;
+    text-align: center;
 }
 
 .user-menu__button:hover {
@@ -324,3 +325,4 @@ body {
         position: absolute;
     }
 }
+
