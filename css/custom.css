@@ -42,7 +42,8 @@ body {
 
 /** Navbar **/
 
-.navbar {
+.menu {
+    background-color: white;
     box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.14);
     z-index: 999;
 }
@@ -254,5 +255,72 @@ body {
 @media only screen and (min-width: 1180px) {
     .login-img {
         width: 750px;
+    }
+}
+
+/** Menu**/
+
+.user-menu {
+    background-color: #A5A6F6;
+    padding-top: 30px;
+}
+
+.user-menu__img {
+    position: relative;
+    width: 400px;
+    margin-bottom: -9px;
+}
+
+.user-menu__box {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    z-index: 1;
+    background-color: #f9f9f9;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 40px 40px;
+    margin-bottom: 3rem;
+}
+
+.user-menu__button {
+    background-color: #99DDCC;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    margin-bottom: 1rem;
+    color: #000D6B;
+    font-weight: 700;
+    font-size: 16px;
+    padding: .6rem 1.5rem;
+    transition: .3s ease-in-out;
+}
+
+.user-menu__button:hover {
+    background-color: #4FC6A8;
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    .user-menu {
+        padding-top: 30px;
+        height: calc(100vh - 108px);
+    }
+
+    .user-menu__img {
+        right: 100px;
+        bottom: 49px;
+        position: absolute;
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    .user-menu {
+        padding-top: 60px;
+        height: calc(100vh - 108px);
+    }
+    
+    .user-menu__img {
+        right: 100px;
+        bottom: 49px;
+        position: absolute;
     }
 }
