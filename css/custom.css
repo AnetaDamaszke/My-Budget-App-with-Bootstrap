@@ -42,8 +42,7 @@ body {
 
 /** Navbar **/
 
-.menu {
-    height: 82px;
+.navbar {
     box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.14);
     z-index: 999;
 }
@@ -53,7 +52,7 @@ body {
     border: 2px solid rgba(255, 255, 255, 0);
     text-transform: uppercase;
     font-weight: 700;
-    padding: .6rem 1.5rem !important;
+    padding: .4rem 1.3rem !important;
 }
 
 .menu-link:hover {
@@ -73,7 +72,6 @@ body {
 
 @media only screen and (max-width: 768px) {
     .menu {
-        height: 56px;
         box-shadow: none;
     }
 
@@ -234,7 +232,7 @@ body {
 @media only screen and (min-width: 768px) {
     .login {
         padding-top: 90px;
-        height: calc(100vh - 135px);
+        height: calc(100vh - 108px);
     }
 
     .login-img {
