@@ -220,7 +220,7 @@ body {
 
 .login-box {
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     position: relative;
     z-index: 1;
     background-color: #A5A6F6;
