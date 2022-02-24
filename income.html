@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Project for course">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>My Budget App</title>
+        <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <nav class="nav navbar navbar-light navbar-expand-md menu">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img class="menu-logo" src="img/MYBUDGET.svg" alt="logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navContent">
+                    <div class="navbar-nav">
+                        <a href="index.html" class="nav-item nav-link menu-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link ms-2 ms-lg-3 menu-link">O porgramie</a>
+                        <a href="login.html" class="nav-item nav-link ms-2 ms-lg-3 active menu-link">Zaloguj</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Add Income -->
+        <section class="income">
+            <div class="container">
+                <h1 class="text-center add-header">Dodaj przychód</h1>
+                <div class="add-box">
+                    <form action="">
+                        <div class="d-inline-block">
+                            <div class="form-group">
+                                <label for="incomeAmount" class="form-control-label">Kwota w PLN</label>
+                                <input type="number" id="incomeAmount" placeholder="np. 500.00" class="form-control"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="incomeDate" class="form-control-label">Data</label>
+                                <input type="date" id="incomeDate" placeholder="RRRR-MM-DD" class="form-control"/>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="form-check">
+                                <label class="form-check-label">Kategoria:</label>
+                                <label class="form-checkbox-input">Wynagrodzenie
+                                    <input type="radio" checked="checked" name="radio" />
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="form-checkbox-input">Spredaż allegro
+                                    <input type="radio" checked="checked" name="radio" />
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="form-checkbox-input">Odsetki bankowe
+                                    <input type="radio" checked="checked" name="radio" />
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="form-checkbox-input">Inne
+                                    <input type="radio" checked="checked" name="radio" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="incomeDate" class="form-control-label">Komentarz (opcjonalnie)</label>
+                                <textarea rows="5" cols ="30"></textarea>
+                            </div>
+                        </div>
+                        <div class="d-inline-block">
+                            <a href="#" type="button" class="btn form-button">Anuluj</a>
+                            <a href="#" type="button" class="btn form-button">Dodaj</a>
+                        </div>
+                    </form>
+                </div>
+                <img class="img-fluid add__img" src="img/INCOME_INEQUALITY.png" alt="budżet domowy" />
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-white site-footer">
+            <div class="container">
+                <div class="row pb-3">
+                    <div class="col-md-6 pt-3 text-center text-md-start">
+                        <img class="" src="img/MYBUDGET_FOOTER.svg" alt="logo" />
+                    </div>
+                    <div class="col-md-6 pt-3 text-center text-md-end">
+                        Designed by Aneta Damaszke 2022
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="js/registration.js"></script>
+    </body>
+</html>
