@@ -498,7 +498,7 @@ input:checked ~ .checkmark {
     font-weight: 400;
 }
 
-.active, .accordion-button:hover {
+.accordion-button:hover {
     background-color: #000D6B;
     color: white !important;
 }
@@ -514,10 +514,6 @@ input:checked ~ .checkmark {
     color: var(--color-accent);
     font-weight: bold;
     float: right;
-}
-  
-.active:after {
-    content: "\2212";
 }
 
 .balance table {
@@ -535,4 +531,17 @@ input:checked ~ .checkmark {
     width: 15px;
     height: 15px;
     margin-right: .5rem;
+}
+
+/** About **/
+
+.about-text {
+    font-size: 16px;
+}
+
+@media only screen and (min-width: 991px) {
+    .about-img {
+        margin-left: 25%;
+        width: 550px;
+    }
 }
