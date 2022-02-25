@@ -31,53 +31,73 @@
         </nav>
 
         <!-- Add Income -->
-        <section class="income">
+        <section class="add">
             <div class="container">
                 <h1 class="text-center add-header">Dodaj przychód</h1>
-                <div class="add-box">
-                    <form action="">
-                        <div class="d-inline-block">
-                            <div class="form-group">
-                                <label for="incomeAmount" class="form-control-label">Kwota w PLN</label>
-                                <input type="number" id="incomeAmount" placeholder="np. 500.00" class="form-control"/>
-                            </div>
-                            <div class="form-group">
-                                <label for="incomeDate" class="form-control-label">Data</label>
-                                <input type="date" id="incomeDate" placeholder="RRRR-MM-DD" class="form-control"/>
-                            </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="add-box">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group w-100">
+                                            <label for="incomeAmount" class="form-control-label mb-2">Kwota w PLN</label>
+                                            <input type="number" id="incomeAmount" placeholder="np. 500.00" class="form-control"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group w-100">
+                                            <label for="incomeDate" class="form-control-label mb-2">Data</label>
+                                            <input type="date" id="incomeDate" placeholder="RRRR-MM-DD" class="form-control"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-check pt-4">
+                                            <label class="form-check-label d-block mb-2">Kategoria:</label>
+                                            <label class="form-checkbox-input d-block mb-1">
+                                                <input type="radio" checked="checked" name="radio" />
+                                                <span class="checkmark"></span>
+                                                <span class="add-radio__text">Wynagrodzenie</span>
+                                            </label>
+                                            <label class="form-checkbox-input d-block mb-1">
+                                                <input type="radio" checked="checked" name="radio" />
+                                                <span class="checkmark"></span>
+                                                <span class="add-radio__text">Sprzedaż allegro</span>
+                                            </label>
+                                            <label class="form-checkbox-input d-block mb-1">
+                                                <input type="radio" checked="checked" name="radio" />
+                                                <span class="checkmark"></span>
+                                                <span class="add-radio__text">Odsetki bankowe</span>
+                                            </label>
+                                            <label class="form-checkbox-input d-block mb-1">
+                                                <input type="radio" checked="checked" name="radio" />
+                                                <span class="checkmark"></span>
+                                                <span class="add-radio__text">Inne</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group pt-4">
+                                        <label for="incomeDate" class="form-control-label d-block mb-2">Komentarz (opcjonalnie)</label>
+                                        <textarea rows="3" cols ="30" class="d-block w-100"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row pt-2">
+                                    <div class="col-md-6">
+                                        <a href="#" type="button" class="btn form-button__secondary">Anuluj</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="#" type="button" class="btn form-button">Dodaj</a>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                        <div class="">
-                            <div class="form-check">
-                                <label class="form-check-label">Kategoria:</label>
-                                <label class="form-checkbox-input">Wynagrodzenie
-                                    <input type="radio" checked="checked" name="radio" />
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="form-checkbox-input">Spredaż allegro
-                                    <input type="radio" checked="checked" name="radio" />
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="form-checkbox-input">Odsetki bankowe
-                                    <input type="radio" checked="checked" name="radio" />
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="form-checkbox-input">Inne
-                                    <input type="radio" checked="checked" name="radio" />
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="form-group">
-                                <label for="incomeDate" class="form-control-label">Komentarz (opcjonalnie)</label>
-                                <textarea rows="5" cols ="30"></textarea>
-                            </div>
-                        </div>
-                        <div class="d-inline-block">
-                            <a href="#" type="button" class="btn form-button">Anuluj</a>
-                            <a href="#" type="button" class="btn form-button">Dodaj</a>
-                        </div>
-                    </form>
+                    </div>
+                    <div class="col-md-5 d-flex">
+                        <img class="img-fluid align-self-end add-img" src="img/INCOME_INEQUALITY.png" alt="budżet domowy" />
+                    </div>
                 </div>
-                <img class="img-fluid add__img" src="img/INCOME_INEQUALITY.png" alt="budżet domowy" />
             </div>
         </section>
 

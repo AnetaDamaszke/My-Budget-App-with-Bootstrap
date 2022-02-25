@@ -193,6 +193,21 @@ body {
     border-radius: 5px;
     font-weight: 700;
     font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.form-button__secondary {
+    background-color: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    padding: .6rem 1.5rem;
+    margin-top: 1rem;
+    width: 100%;
 }
 
 .registration-statement {
@@ -326,3 +341,52 @@ body {
     }
 }
 
+/** Add income/expance **/
+
+.add {
+    background-color: #A5A6F6;
+}
+
+.add-header {
+    font-size: 36px;
+    font-weight: 600;
+    padding: 2rem 0;
+}
+
+.add-box {
+    background-color: #99DDCC;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 40px 40px;
+    margin-bottom: 3rem;
+    color:#000D6B;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.add-img {
+    margin-bottom: -3%;
+}
+
+@media only screen and (min-width: 991px) {
+    .add-img {
+        margin-left: -20%;
+    }
+}
+
+.add .form-check {
+    padding-left: 0 !important;
+} 
+
+.add-radio__text {
+    font-weight: 400;
+}
+
+textarea {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
