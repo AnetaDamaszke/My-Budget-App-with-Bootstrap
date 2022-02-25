@@ -20,17 +20,6 @@
     image-rendering: -webkit-optimize-contrast;
 }
 
-:root {
-    --color-primary: #A5A6F6;
-    --color-accent: #CA2ACD;
-    --color-light-green: #99DDCC;
-    --color-dark-green: #4FC6A8;
-    --color-dark: #000D6B;
-    --color-light-grey: #F9F9F9;
-    --color-grey: #7D7D7D; 
-    --color-dark-grey: #3D3D3D;
-}
-
 body {
     color: #000D6B;
     font-size: 14px;
@@ -38,6 +27,20 @@ body {
     font-weight: 400;
     line-height: 1.6;
     background-color: #F9F9F9;
+}
+
+.box {
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 40px 40px;
+    margin-bottom: 3rem;
+    color:#000D6B;
+    font-weight: 700;
+    font-size: 16px;
 }
 
 /** Navbar **/
@@ -195,6 +198,12 @@ body {
     font-size: 16px;
     color: white;
     text-transform: uppercase;
+    transition: .3s ease-in-out;
+}
+
+.form-button:hover {
+    color: white;
+    background-color: #000D6B;
 }
 
 .form-button__secondary {
@@ -208,6 +217,13 @@ body {
     padding: .6rem 1.5rem;
     margin-top: 1rem;
     width: 100%;
+    transition: .3s ease-in-out;
+}
+
+.form-button__secondary:hover {
+    border: 2px solid #4FC6A8;
+    background-color: #4FC6A8;
+    color: white;
 }
 
 .registration-statement {
@@ -404,4 +420,10 @@ option:hover {
 
 input:checked ~ .checkmark {
     background-color: #CA2ACD !important;
+}
+
+/** Balance **/
+
+.balance {
+    background-color: #A5A6F6;
 }
