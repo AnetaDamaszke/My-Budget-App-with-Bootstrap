@@ -22,8 +22,8 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navContent">
                     <div class="navbar-nav">
-                        <a href="income.html" class="nav-item nav-link menu-link">Dodaj przychód</a>
-                        <a href="expense.html" class="nav-item nav-link menu-link">Dodaj wydatek</a>
+                        <a href="income.html" class="nav-item nav-link menu-link">Przychód +</a>
+                        <a href="expense.html" class="nav-item nav-link menu-link">Wydatek +</a>
                         <a href="setting.html" class="nav-item nav-link ms-2 ms-lg-3 menu-link">Ustawienia</a>
                         <a href="index.html" class="nav-item nav-link ms-2 ms-lg-3 menu-link">Wyloguj</a>
                     </div>
@@ -36,25 +36,82 @@
             <div class="container">
                 <h1 class="text-center add-header">Twój bilans w okresie data-data</h1>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 px-5">
                         <h2 class="text-uppercase balance-subheader">Przychody:</h2>
                         <div class="box balance-box" style="background-color: #99DDCC;">
-                            <h3 class="text-uppercase balance-box__item-subheader">Wynagrodzenie:</h3>
-                            <div class="box balance-box__item">
-
+                            <div class="accordion" id="accordionBalance01">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading01">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse01" aria-expanded="true" aria-controls="collapse01">
+                                            <span class="">Wynagrodzenie</span>
+                                            <span class="ml-auto" >5000.00 zł</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapse01" class="accordion-collapse collapse" aria-labelledby="heading01" data-bs-parent="#accordionBalance1">
+                                        <div class="accordion-body">
+                                                <table>
+                                                    <tr>
+                                                        <td style="font-weight: 700; text-align:left;">Wypłata</td> <td>2022-01-10</td> <td>4500.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="font-weight: 700; text-align:left;">Premia</td> <td>2022-01-10</td> <td>500.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2" style="font-weight: 700; text-align: right;">Suma:</td> <td style="font-weight: 700; font-size: 16px;">5000.00 zł</td>
+                                                    </tr>
+                                                </table>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading01">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse02" aria-expanded="true" aria-controls="collapse02">
+                                            Sprzedaż
+                                        </button>
+                                    </h2>
+                                        <div id="collapse02" class="accordion-collapse collapse" aria-labelledby="heading02" data-bs-parent="#accordionBalance1">
+                                            <div class="accordion-body">
+                                                <table>
+                                                    <tr>
+                                                        <td style="font-weight: 700; text-align:left;">Wypłata</td> <td>2022-01-10</td> <td>4500.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="font-weight: 700; text-align:left;">Premia</td> <td>2022-01-10</td> <td>500.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2" style="font-weight: 700; text-align: right;">Suma:</td> <td style="font-weight: 700; font-size: 16px;">5000.00 zł</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading01">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse03" aria-expanded="true" aria-controls="collapse03">
+                                            Inne
+                                        </button>
+                                    </h2>
+                                    <div id="collapse03" class="accordion-collapse collapse" aria-labelledby="heading03" data-bs-parent="#accordionBalance1">
+                                        <div class="accordion-body">
+                                            <table>
+                                                <tr>
+                                                    <td style="font-weight: 700; text-align:left;">Wypłata</td> <td>2022-01-10</td> <td>4500.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-weight: 700; text-align:left;">Premia</td> <td>2022-01-10</td> <td>500.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" style="font-weight: 700; text-align: right;">Suma:</td> <td style="font-weight: 700; font-size: 16px;">5000.00 zł</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <h3 class="text-uppercase balance-box__item-subheader">Sprzedaż:</h3>
-                            <div class="box balance-box__item">
-
-                            </div>
-                            <h3 class="text-uppercase balance-box__item-subheader">Inne:</h3>
-                            <div class="box balance-box__item">
-
-                            </div>
-                            <div class="d-flex">
+                            <div class="d-flex mt-4">
                                 <h3 class="text-uppercase balance-box__item-subheader">Całkowita suma przychodów:</h3>
                                 <div class="box balance-box__sum">
-                                    <span>8500 zł</span>
+                                    <span id="incomeSum" class="">8500 zł</span>
                                 </div>
                             </div>
                         </div>
@@ -67,7 +124,7 @@
                                             Jedzenie
                                         </button>
                                     </h2>
-                                    <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionBalance">
+                                    <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionBalance">
                                         <div class="accordion-body">
                                             <table>
                                                 <tr>
@@ -307,16 +364,38 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="d-flex mt-4">
+                                <h3 class="text-uppercase balance-box__item-subheader">Całkowita suma wydatków:</h3>
+                                <div class="box balance-box__sum">
+                                    <span>8500 zł</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 px-5">
                         <img class="img-fluid" src="img/ECONOMY_ANALYSIS.png" alt="budżet domowy" />
-                        <div class="box balance-box" style="background-color: #f9f9f9;">
-                            
+                        <div class="box balance-box" style="background-color: #EAEAEB;">
+                            <h3 class="balance-subheader">Twój całkowity bilans wynosi:</h3>
+                            <div class="box balance-box__sum">+ 15000.00 zł</div>
+                            <h4 class="text-center mt-4">Gratulacje! Świetnie zarządzasz finansami!</h4>
                         </div>
-                        <div class="">
+                        <div class="piechart">
                             <h2 class="text-uppercase balance-subheader">Wykres Twoich wydatków:</h2>
                             <div class="piechart__item"></div>
+                            <div class="text-center piechart__key">
+                                <div class="d-flex mb-1">
+                                    <div class="small-square" style="background-color: #99DDCC;"></div>
+                                    <span>Jedzenie</span>
+                                </div>
+                                <div class="d-flex mb-1">
+                                    <div class="small-square" style="background-color: #CA2ACD;"></div>
+                                    <span>Transport</span>
+                                </div>
+                                <div class="d-flex mb-1">
+                                    <div class="small-square" style="background-color: #000D6B;"></div>
+                                    <span>Rachunki</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
