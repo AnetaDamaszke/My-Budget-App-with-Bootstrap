@@ -22,7 +22,7 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navContent">
                     <div class="navbar-nav">
-                        <a href="expense.html" class="nav-item nav-link menu-link">Dodaj wydatek</a>
+                        <a href="income.html" class="nav-item nav-link menu-link">Dodaj przychód</a>
                         <a href="balance.html" class="nav-item nav-link menu-link">Zobacz bilans</a>
                         <a href="setting.html" class="nav-item nav-link ms-2 ms-lg-3 menu-link">Ustawienia</a>
                         <a href="index.html" class="nav-item nav-link ms-2 ms-lg-3 menu-link">Wyloguj</a>
@@ -34,7 +34,7 @@
         <!-- Add Income -->
         <section class="add">
             <div class="container">
-                <h1 class="text-center add-header">Dodaj przychód</h1>
+                <h1 class="text-center add-header">Dodaj wydatek</h1>
                 <div class="row">
                     <div class="col-md-7">
                         <div class="add-box">
@@ -56,26 +56,49 @@
                                 <div class="row">
                                     <div class="col">
                                         <div class="form-check pt-4">
-                                            <label class="form-check-label d-block mb-2">Kategoria:</label>
+                                            <label class="form-check-label d-block mb-2">Kategoria</label>
+                                            <select>
+                                                <option value="0">Wybierz:</option>
+                                                <option value="1">Jedzenie</option>
+                                                <option value="2">Karta debetowa</option>
+                                                <option value="3">Mieszkanie</option>
+                                                <option value="4">Transport</option>
+                                                <option value="5">Telekomunikacja</option>
+                                                <option value="6">Opieka zdrowotna</option>
+                                                <option value="7">Ubranie</option>
+                                                <option value="8">Higiena</option>
+                                                <option value="9">Dzieci</option>
+                                                <option value="10">Rozrywka</option>
+                                                <option value="11">Wycieczka</option>
+                                                <option value="12">Szkolenia</option>
+                                                <option value="13">Hobby</option>
+                                                <option value="14">Oszczędności</option>
+                                                <option value="15">Spłata kredytu</option>
+                                                <option value="16">Rata</option>
+                                                <option value="17">Darowizna</option>
+                                                <option value="18">Inne</option>
+                                              </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-check pt-4">
+                                            <label class="form-check-label d-block mb-2">Sposób płatności</label>
                                             <label class="form-checkbox-input d-block mb-1">
                                                 <input type="radio" checked="checked" name="radio" />
                                                 <span class="checkmark"></span>
-                                                <span class="add-radio__text">Wynagrodzenie</span>
+                                                <span class="add-radio__text">Gotówka</span>
                                             </label>
                                             <label class="form-checkbox-input d-block mb-1">
                                                 <input type="radio" checked="checked" name="radio" />
                                                 <span class="checkmark"></span>
-                                                <span class="add-radio__text">Sprzedaż allegro</span>
+                                                <span class="add-radio__text">Karta kredytowa</span>
                                             </label>
                                             <label class="form-checkbox-input d-block mb-1">
                                                 <input type="radio" checked="checked" name="radio" />
                                                 <span class="checkmark"></span>
-                                                <span class="add-radio__text">Odsetki bankowe</span>
-                                            </label>
-                                            <label class="form-checkbox-input d-block mb-1">
-                                                <input type="radio" checked="checked" name="radio" />
-                                                <span class="checkmark"></span>
-                                                <span class="add-radio__text">Inne</span>
+                                                <span class="add-radio__text">Karta debetowa</span>
                                             </label>
                                         </div>
                                     </div>
@@ -96,7 +119,7 @@
                         </div>
                     </div>
                     <div class="col-md-5 d-flex">
-                        <img class="img-fluid align-self-end add-img" src="img/INCOME_INEQUALITY.png" alt="budżet domowy" />
+                        <img class="img-fluid align-self-end add-img" style="margin-bottom: 0;" src="img/BUYING_A_HOUSE.png" alt="budżet domowy" />
                     </div>
                 </div>
             </div>
