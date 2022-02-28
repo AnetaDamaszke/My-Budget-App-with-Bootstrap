@@ -46,16 +46,16 @@ function checkPassword() {
   }
 }
 
+function openNewSite() {
+  window.open("menu.html", "_self");
+}
+
 function validateForm() {
-  
-  var link = document.getElementById("registration");
 
   if ((validateEmail() == true) && (checkPassword() == true) && (checkName() == true)) {
     document.getElementById("statement").innerHTML = "Konto zostało pomyślnie utworzone!";
-    document.getElementById("registration").innerHTML = "Zaloguj";
-
-    //link.setAttribute("href", "login.html");
-
+    document.getElementById("reigistrationButton").innerHTML = "Zaloguj";
+    document.getElementById("reigistrationButton").addEventListener("click", openNewSite);
   }
 
 }
