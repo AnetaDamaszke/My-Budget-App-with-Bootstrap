@@ -1,7 +1,7 @@
 function checkEmail() {
 
    var email = document.getElementById("email").value;
-   var userEmail = "aneta@gmail.pl";
+   var userEmail = "aneta@gmail.com";
    
     if (email == userEmail) return true;
     else {

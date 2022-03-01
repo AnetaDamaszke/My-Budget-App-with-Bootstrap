@@ -27,6 +27,7 @@ body {
     font-weight: 400;
     line-height: 1.6;
     background-color: #F9F9F9;
+    min-height: 100vh;
 }
 
 .box {
@@ -41,6 +42,10 @@ body {
     color:#000D6B;
     font-weight: 700;
     font-size: 16px;
+}
+
+.font-weight-bold {
+    font-weight: 700;
 }
 
 /** Navbar **/
@@ -97,7 +102,7 @@ body {
 /** Intro **/
 
 .intro {
-    margin-top: 30px;
+    padding-top: 30px;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -115,7 +120,7 @@ body {
 
 @media only screen and (min-width: 768px) {
     .intro {
-        margin-top: 60px;
+        padding-top: 60px;
         padding-left: 20%;
         padding-right: 20%;
     }
@@ -157,7 +162,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 991px) {
+@media only screen and (min-width: 991px) {  
     .registration-img {
         width: 115%;
         margin-left: -15%;
@@ -361,12 +366,13 @@ body {
 
 .add {
     background-color: #A5A6F6;
+    min-height: calc(100vh - 105px);
 }
 
 .add-header {
     font-size: 36px;
     font-weight: 600;
-    padding: 2rem 0;
+    padding: 60px 0;
 }
 
 .add-box {
@@ -385,12 +391,20 @@ body {
 }
 
 .add-img {
-    margin-bottom: -3%;
+    margin-bottom: -4%;
 }
 
-@media only screen and (min-width: 991px) {
+@media only screen and (min-width: 767px) and (max-width: 991px) {
     .add-img {
         margin-left: -20%;
+        margin-bottom: -4%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .add-img {
+        margin-left: -20%;
+        margin-bottom: -4%;
     }
 }
 
@@ -428,10 +442,39 @@ input:checked ~ .checkmark {
     background-color: #A5A6F6;
 }
 
+.balance-date__button {
+    padding: .8rem 1.5rem .6rem;
+    width: auto;
+    background-color: #CA2ACD;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    transition: .3s ease-in-out;
+}
+
+.balance-date__button:hover {
+    background-color: #000D6B;
+    color: white;
+}
+
 .balance-subheader {
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+@media only screen and (max-width: 576px) {
+    .add-header {
+        font-size: 28px;
+        padding: 40px 0;
+    }
+}
+
+.balance-box {
+    margin-bottom: 60px;
 }
 
 .balance-box__item-subheader {
@@ -444,9 +487,12 @@ input:checked ~ .checkmark {
     background-color: white;
     color:#CA2ACD;
     padding: 15px 25px;
-    margin-bottom: 0;
     font-size: 20px;
     text-align: right;
+}
+
+.piechrt {
+    margin-top: 60px;
 }
 
 .piechart__item {
@@ -460,6 +506,14 @@ input:checked ~ .checkmark {
         #CA2ACD 70deg, 
         #000D6B 0 235deg, 
         #99DDCC 0);
+}
+
+@media only screen and (max-width: 576px) {
+    .piechart__item {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+    }
 }
 
 .accordion-button {

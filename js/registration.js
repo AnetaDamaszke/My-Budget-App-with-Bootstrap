@@ -47,7 +47,7 @@ function checkPassword() {
 }
 
 function openNewSite() {
-  window.open("menu.html", "_self");
+  window.open("login.html", "_self");
 }
 
 function validateForm() {
