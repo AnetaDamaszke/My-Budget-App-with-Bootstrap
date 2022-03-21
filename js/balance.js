@@ -1,3 +1,4 @@
+
 function showStatement() {
 
   const balanceSum = document.querySelector("#balanceSum").innerHTML;
