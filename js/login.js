@@ -1,31 +1,31 @@
 function checkEmail() {
 
-   var email = document.getElementById("email").value;
-   var userEmail = "aneta@gmail.com";
+   const email = document.querySelector("#email").value;
+   const userEmail = "aneta@gmail.com";
    
-    if (email == userEmail) return true;
+    if (email === userEmail) return true;
     else {
-      document.getElementById("loginStatement").innerHTML = "Niepoprawny email!"
+      document.querySelector("#loginStatement").innerHTML = "Niepoprawny email!"
       return false;
     }
 }
 
 function checkPassword() {
 
-  var password = document.getElementById("password").value;
-  var userPassword = "123";
+  const password = document.querySelector("#password").value;
+  const userPassword = "123";
 
-  if (password == userPassword) return true; 
+  if (password === userPassword) return true; 
   else {
-    document.getElementById("loginStatement").innerHTML = "Niepoprawne hasło!"
+    document.querySelector("#loginStatement").textContent = "Niepoprawne hasło!"
     return false;
   }
 }
 
 function checkUser() {
 
-  if ((checkEmail() == true) && (checkPassword() == true)) {
+  if ((checkEmail() === true) && (checkPassword() === true)) {
       window.open("menu.html", "_self");
   }
-  else document.getElementById("loginStatement").innerHTML = "Błąd logowania!";
+  else document.querySelector("loginStatement").textContent = "Błąd logowania!";
 }
