@@ -1,9 +1,9 @@
 function showStatement() {
 
-  var balanceSum = document.getElementById("balanceSum").value;
+  const balanceSum = document.querySelector("#balanceSum").innerHTML;
 
-  if(balanceSum > 0) document.getElementById("balanceSumStatement").innerHTML = "Gratulacje! Świetnie zarządzasz finansami!";
-  else document.getElementById("balanceSumStatement").innerHTML = "Uważaj! Wpadasz w długi!";
+  if(balanceSum >= 0) document.querySelector("#balanceSumStatement").textContent = "Gratulacje! Świetnie zarządzasz finansami!";
+  else document.querySelector("#balanceSumStatement").textContent = "Uważaj! Wpadasz w długi!";
 }
 
 window.onload = showStatement;

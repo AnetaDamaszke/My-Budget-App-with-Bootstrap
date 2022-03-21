@@ -391,21 +391,8 @@ body {
 }
 
 .add-img {
-    margin-bottom: -4%;
-}
-
-@media only screen and (min-width: 767px) and (max-width: 991px) {
-    .add-img {
-        margin-left: -20%;
-        margin-bottom: -4%;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .add-img {
-        margin-left: -20%;
-        margin-bottom: -4%;
-    }
+    max-width: 600px;
+    margin-bottom: -2%;
 }
 
 .add .form-check {
@@ -598,4 +585,15 @@ input:checked ~ .checkmark {
         margin-left: 25%;
         width: 550px;
     }
+}
+
+.accordion__bold-text {
+    font-weight: 700; 
+    text-align: right !important;
+}
+
+.accordion__sum {
+    color: #CA2ACD;
+    font-weight: 700; 
+    font-size: 16px;
 }

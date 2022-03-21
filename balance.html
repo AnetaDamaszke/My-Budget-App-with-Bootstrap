@@ -82,7 +82,7 @@
                                 </label>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn balance-date__button">Zapisz</button>
+                                <button id="selectDate" type="button" class="btn balance-date__button">Zapisz</button>
                             </div>
                         </div>
                     </div>
@@ -102,13 +102,13 @@
                                         <div class="accordion-body">
                                                 <table>
                                                     <tr>
-                                                        <td style="font-weight: 700; text-align:left;">Wypłata</td> <td>2022-01-10</td> <td>4500.00</td>
+                                                        <td class="accordion__bold-text">Wypłata</td> <td>2022-01-10</td> <td id="income11">4500</td>
                                                     </tr>
                                                     <tr>
-                                                        <td style="font-weight: 700; text-align:left;">Premia</td> <td>2022-01-10</td> <td>500.00</td>
+                                                        <td class="accordion__bold-text">Premia</td> <td>2022-01-10</td> <td id="income12">500</td>
                                                     </tr>
                                                     <tr>
-                                                        <td colspan="2" style="font-weight: 700; text-align: right;">Suma:</td> <td style="font-weight: 700; font-size: 16px;">5000.00 zł</td>
+                                                        <td colspan="2" class="accordion__bold-text">Suma:</td> <td class="accordion__sum"><span id="incomes1Sum"></span> zł</td>
                                                     </tr>
                                                 </table>
                                          </div>
@@ -124,13 +124,16 @@
                                             <div class="accordion-body">
                                                 <table>
                                                     <tr>
-                                                        <td style="font-weight: 700; text-align:left;">Wypłata</td> <td>2022-01-10</td> <td>4500.00</td>
+                                                        <td class="accordion__bold-text">Książki</td> <td>2022-01-5</td> <td id="">150.00</td>
                                                     </tr>
                                                     <tr>
-                                                        <td style="font-weight: 700; text-align:left;">Premia</td> <td>2022-01-10</td> <td>500.00</td>
+                                                        <td class="accordion__bold-text">Gry</td> <td>2022-01-16</td> <td>300.00</td>
                                                     </tr>
                                                     <tr>
-                                                        <td colspan="2" style="font-weight: 700; text-align: right;">Suma:</td> <td style="font-weight: 700; font-size: 16px;">5000.00 zł</td>
+                                                        <td class="accordion__bold-text">Ubrania</td> <td>2022-01-23</td> <td>250.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2" class="accordion__bold-text">Suma:</td> <td class="accordion__sum"><span id="incomes2Sum"></span> zł</td>
                                                     </tr>
                                                 </table>
                                             </div>
@@ -146,13 +149,13 @@
                                         <div class="accordion-body">
                                             <table>
                                                 <tr>
-                                                    <td style="font-weight: 700; text-align:left;">Wypłata</td> <td>2022-01-10</td> <td>4500.00</td>
+                                                    <td class="accordion__bold-text">Odszkodowanie</td> <td>2022-01-2</td> <td>1500.00</td>
                                                 </tr>
                                                 <tr>
-                                                    <td style="font-weight: 700; text-align:left;">Premia</td> <td>2022-01-10</td> <td>500.00</td>
+                                                    <td class="accordion__bold-text">500+</td> <td>2022-01-15</td> <td>500.00</td>
                                                 </tr>
                                                 <tr>
-                                                    <td colspan="2" style="font-weight: 700; text-align: right;">Suma:</td> <td style="font-weight: 700; font-size: 16px;">5000.00 zł</td>
+                                                    <td colspan="2" class="accordion__bold-text">Suma:</td> <td class="accordion__sum"><span id="incomes3Sum"></span> zł</td>
                                                 </tr>
                                             </table>
                                         </div>
@@ -162,7 +165,7 @@
                             <div class="d-flex mt-4">
                                 <h3 class="text-uppercase balance-box__item-subheader">Całkowita suma przychodów:</h3>
                                 <div class="box balance-box__sum">
-                                    <span id="incomeSum" class="">8500 zł</span>
+                                    <span id="allIncomesSum" class="">8500 zł</span>
                                 </div>
                             </div>
                         </div>
@@ -179,13 +182,13 @@
                                         <div class="accordion-body">
                                             <table>
                                                 <tr>
-                                                    <td style="font-weight: 700; text-align:left;">Wypłata</td> <td>2022-01-10</td> <td>4500.00</td>
+                                                    <td class="accordion__bold-text">Wypłata</td> <td>2022-01-10</td> <td>4500.00</td>
                                                 </tr>
                                                 <tr>
-                                                    <td style="font-weight: 700; text-align:left;">Premia</td> <td>2022-01-10</td> <td>500.00</td>
+                                                    <td class="accordion__bold-text">Premia</td> <td>2022-01-10</td> <td>500.00</td>
                                                 </tr>
                                                 <tr>
-                                                    <td colspan="2" style="font-weight: 700; text-align: right;">Suma:</td> <td style="font-weight: 700; font-size: 16px;">5000.00 zł</td>
+                                                    <td colspan="2" class="accordion__bold-text">Suma:</td> <td style="font-weight: 700; font-size: 16px;">5000.00 zł</td>
                                                 </tr>
                                             </table>
                                         </div>
@@ -427,7 +430,7 @@
                         <img class="img-fluid" src="img/ECONOMY_ANALYSIS.png" alt="budżet domowy" />
                         <div class="box balance-box mt-5" style="background-color: #EAEAEB;">
                             <h3 class="balance-subheader pb-2">Twój całkowity bilans wynosi:</h3>
-                            <div id="balanceSum" type="number" class="box balance-box__sum mb-2" style="font-size: 24px;">15000<span> zł</span></div>
+                            <div class="box balance-box__sum mb-2" style="font-size: 24px;"><span id="balanceSum" type="number">15000</span> zł</div>
                             <h4 id="balanceSumStatement" class="text-center mt-4"></h4>
                         </div>
                         <div class="piechart">
