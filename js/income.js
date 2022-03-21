@@ -4,12 +4,11 @@ const income = {
     button: document.querySelector('#addIncomeBtn')
 }
 
-const deleteButton = document.querySelector('#deleteBtn');
 const newStatement = document.querySelector('.statement');
 
 income.button.addEventListener('click', () => {
     if(!income.amount.value) alert("Podaj wartosć przychodu!");
-    else if( parseInt(income.amount.value < 0) ) alert("Podaj przychód większy od zera!")
+    else if(income.amount.value <= 0 ) alert("Podaj przychód większy od zera!")
     else if(!(income.date.value) ) alert("Podaj datę przychodu!")
     else {
         newStatement.innerText = "Przychód pomyślnie dodany!";
