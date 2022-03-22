@@ -6,17 +6,27 @@ const expense = {
 }
 
 const newStatement = document.querySelector('.statement');
-const optionValue = expense.category.options[expense.category.selectedIndex].value;
+let optionValue = '0';
 let isCategorySelected = false;
 
-function checkCategory() {
-    if( optionValue === 0) {
+function checkCategory() { 
+    if( optionValue === '0') {
         isCategorySelected = false;
     }
     else isCategorySelected = true;
 }
 
+function reset() {
+    expense.amount.value = "";
+    expense.date.value = "";
+}
+
 expense.button.addEventListener('click', () => {
+
+    optionValue = expense.category.options[expense.category.selectedIndex].value;
+    
+    checkCategory();
+
     if(!expense.amount.value) alert("Podaj wartosć wydatku!");
     else if(expense.amount.value <= 0) alert("Podaj kwotę większą od zera!")
     else if(!(expense.date.value)) alert("Podaj datę wydatku!")
@@ -24,11 +34,8 @@ expense.button.addEventListener('click', () => {
     else {
         newStatement.innerText = "Przychód pomyślnie dodany!";
         expense.button.innerText = "Dodaj kolejny";
+        expense.button.classList.add('form-button');
         reset();
     }
 })
 
-function reset() {
-    expense.amount.value = "";
-    expense.date.value = "";
-}
