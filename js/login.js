@@ -1,3 +1,16 @@
+const showPasswordButton = document.querySelector('#showPassword');
+const passwordInput = document.querySelector('#password');
+
+showPasswordButton.addEventListener('click', () => {
+  
+  if(showPasswordButton.value === "ON"){
+    showPasswordButton.value = "OFF";
+    passwordInput.setAttribute('type','password');}
+  else if(showPasswordButton.value === "OFF"){
+    showPasswordButton.value = "ON";
+    passwordInput.setAttribute('type','text');}
+})
+
 function checkEmail() {
 
    const email = document.querySelector("#email").value;

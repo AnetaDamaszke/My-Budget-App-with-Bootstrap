@@ -1,3 +1,16 @@
+const showPasswordButton = document.querySelector('#showPassword');
+const passwordInput = document.querySelector('#password1');
+
+showPasswordButton.addEventListener('click', () => {
+  
+  if(showPasswordButton.value === "ON"){
+    showPasswordButton.value = "OFF";
+    passwordInput.setAttribute('type','password');}
+  else if(showPasswordButton.value === "OFF"){
+    showPasswordButton.value = "ON";
+    passwordInput.setAttribute('type','text');}
+})
+
 function checkName() {
 
    const name = document.querySelector("#name").value;
@@ -21,7 +34,6 @@ function validateEmail() {
     return false;
   }
 }
-
 
 function checkPassword() {
 
@@ -56,7 +68,8 @@ function validateForm() {
   if ((validateEmail() === true) && (checkPassword() === true) && (checkName() === true)) {
     document.querySelector("#statement").textContent = "Konto zostało pomyślnie utworzone!";
     document.querySelector("#reigistrationButton").textContent = "Zaloguj";
-    document.querySelector("#reigistrationButton").addEventListener("click", openNewSite);
+    document.querySelector("#reigistrationButton").addEventListener('click', openNewSite);
   }
 
 }
+
