@@ -1,9 +1,52 @@
 const expense = {
     amount: document.querySelector('#expenseAmount'),
-    date: document.querySelector('#expenseDate'),
+    date: document.querySelector('#currentDateCheck'),
     category: document.querySelector('#categorySelect'),
     button: document.querySelector('#addExpenseBtn')
 }
+
+//------Aktualna data
+
+const now = new Date();
+const currentDate = document.querySelector('.current-date');
+
+let month = now.getMonth()+1;
+
+function leadingZero(num) {
+    if( num < 10) {
+        num = `0${num}`;
+    }
+    return num;
+}
+
+month = leadingZero(month);
+
+currentDate.innerText = `Dzisiejsza: ${now.getDate()}.${month}.${now.getFullYear()}`;
+
+
+//-------Wyłączenie widoczności pola z wyborem daty gdy wybrana jest aktualna
+
+const inputCurrentDate = document.querySelector('#currentDateCheck');
+const otherCurrentDate = document.querySelector('#otherDateCheck');
+const dataCheck = document.querySelector('#dataCheck');
+const radioGroup = [inputCurrentDate, otherCurrentDate];
+const selectDate = document.querySelector('#expenseDate');
+
+let isCurrentDateSelected = selectDate.setAttribute('disabled', true);
+
+for (const radio of radioGroup) {
+    radio.addEventListener('change', e => {
+            if(inputCurrentDate.checked) {
+                isCurrentDateSelected = selectDate.setAttribute('disabled', true);
+                expense.date = inputCurrentDate;
+            }
+            else if (!inputCurrentDate.checked){
+                isCurrentDateSelected = selectDate.removeAttribute('disabled');
+                expense.date = document.querySelector('#expenseDate');
+            }
+    });
+}
+
 
 const newStatement = document.querySelector('.statement');
 let optionValue = '0';
@@ -38,4 +81,3 @@ expense.button.addEventListener('click', () => {
         reset();
     }
 })
-

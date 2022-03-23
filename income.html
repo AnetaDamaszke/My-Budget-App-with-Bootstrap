@@ -40,44 +40,56 @@
                         <div class="add-box mx-auto">
                             <form action="">
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col">
                                         <div class="form-group w-100">
                                             <label for="incomeValue" class="form-control-label mb-2">Kwota w PLN</label>
                                             <input id="incomeValue" type="number" placeholder="np. 500.00" class="form-control"/>
                                         </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group w-100">
-                                            <label for="incomeDate" class="form-control-label mb-2">Data</label>
-                                            <input id="incomeDate" type="date" placeholder="RRRR-MM-DD" class="form-control"/>
-                                        </div>
+                                    </div> 
+                                </div>  
+                                <div class="row">
+                                    <div class="col">
+                                        <form action="" id="dataCheck" class="form-check pt-4">
+                                            <label class="form-check-label d-block mb-2">Data:</label>
+                                            <label class="form-checkbox-input d-flex mb-1">
+                                                <input id="currentDateCheck" type="radio" checked="checked" name="radio" />
+                                                <span class="checkmark"></span>
+                                                <div class="form-control-label ms-2 current-date" style="font-weight: 400";></div>
+                                            </label>
+                                            <label class="form-checkbox-input d-block mb-1">
+                                                <input id="otherDateCheck" type="radio" name="radio" />
+                                                <span class="checkmark"></span>
+                                                <label for="incomeDate" class="form-control-label mb-1 ms-2" style="font-weight: 400";>Inna:</label>
+                                                <input id="incomeDate" type="date" class="form-control"/>
+                                            </label> 
+                                        </form>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col">
-                                        <div class="form-check pt-4">
+                                        <form action="" id="categoryCheck" class="form-check pt-4">
                                             <label class="form-check-label d-block mb-2">Kategoria:</label>
                                             <label class="form-checkbox-input d-block mb-1">
                                                 <input type="radio" checked="checked" name="radio" />
                                                 <span class="checkmark"></span>
-                                                <span class="add-radio__text">Wynagrodzenie</span>
+                                                <span class="add-radio__text ms-2">Wynagrodzenie</span>
                                             </label>
                                             <label class="form-checkbox-input d-block mb-1">
-                                                <input type="radio" checked="checked" name="radio" />
+                                                <input type="radio" name="radio" />
                                                 <span class="checkmark"></span>
-                                                <span class="add-radio__text">Sprzedaż allegro</span>
+                                                <span class="add-radio__text ms-2">Sprzedaż allegro</span>
                                             </label>
                                             <label class="form-checkbox-input d-block mb-1">
-                                                <input type="radio" checked="checked" name="radio" />
+                                                <input type="radio" name="radio" />
                                                 <span class="checkmark"></span>
-                                                <span class="add-radio__text">Odsetki bankowe</span>
+                                                <span class="add-radio__text ms-2">Odsetki bankowe</span>
                                             </label>
                                             <label class="form-checkbox-input d-block mb-1">
-                                                <input type="radio" checked="checked" name="radio" />
+                                                <input type="radio" name="radio" />
                                                 <span class="checkmark"></span>
-                                                <span class="add-radio__text">Inne</span>
+                                                <span class="add-radio__text ms-2">Inne</span>
                                             </label>
-                                        </div>
+                                        </form>
                                     </div>
                                     <div class="form-group pt-4">
                                         <label for="incomeDate" class="form-control-label d-block mb-2">Komentarz (opcjonalnie)</label>
