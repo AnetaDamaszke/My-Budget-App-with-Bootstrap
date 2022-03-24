@@ -1,6 +1,6 @@
 const income = {
     amount: document.querySelector('#incomeValue'),
-    date: document.querySelector('#currentDateCheck'),
+    date: document.querySelector('#incomeDate'),
     button: document.querySelector('#addIncomeBtn')
 }
 
@@ -8,9 +8,9 @@ const income = {
 //------Aktualna data
 
 const now = new Date();
-const currentDate = document.querySelector('.current-date');
 
 let month = now.getMonth()+1;
+
 
 function leadingZero(num) {
     if( num < 10) {
@@ -21,31 +21,7 @@ function leadingZero(num) {
 
 month = leadingZero(month);
 
-currentDate.innerText = `Dzisiejsza: ${now.getDate()}.${month}.${now.getFullYear()}`;
-
-
-//-------Wyłączenie widoczności pola z wyborem daty gdy wybrana jest aktualna
-
-const inputCurrentDate = document.querySelector('#currentDateCheck');
-const otherCurrentDate = document.querySelector('#otherDateCheck');
-const dataCheck = document.querySelector('#dataCheck');
-const radioGroup = [inputCurrentDate, otherCurrentDate];
-const selectDate = document.querySelector('#incomeDate');
-
-let isCurrentDateSelected = selectDate.setAttribute('disabled', true);
-
-for (const radio of radioGroup) {
-    radio.addEventListener('change', e => {
-            if(inputCurrentDate.checked) {
-                isCurrentDateSelected = selectDate.setAttribute('disabled', true);
-                income.date = inputCurrentDate;
-            }
-            else if (!inputCurrentDate.checked){
-                isCurrentDateSelected = selectDate.removeAttribute('disabled');
-                income.date = document.querySelector('#incomeDate');
-            }
-    });
-}
+income.date.value = `${now.getFullYear()}-${month}-${now.getDate()}`;
 
 //--------Walidacja formularza
 

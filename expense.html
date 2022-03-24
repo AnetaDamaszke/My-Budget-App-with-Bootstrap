@@ -40,28 +40,16 @@
                         <div class="add-box mx-auto">
                             <form action="">
                                 <div class="row">
-                                    <div class="col">
+                                    <div class="col-md-6">
                                         <div class="form-group w-100">
-                                            <label for="expenseAmount" class="form-control-label mb-2">Kwota w PLN</label>
-                                            <input id="expenseAmount"  type="number" step="0.01" placeholder="np. 500.00" class="form-control"/>
+                                            <label for="expenseValue" class="form-control-label mb-2">Kwota w PLN</label>
+                                            <input id="expenseValue" type="number" step="0.01" placeholder="np. 500.00" class="form-control"/>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <form action="" id="dataCheck" class="form-check pt-4">
-                                                <label class="form-check-label d-block mb-2">Data:</label>
-                                                <label class="form-checkbox-input d-flex mb-1">
-                                                    <input id="currentDateCheck" type="radio" checked="checked" name="radio" />
-                                                    <span class="checkmark"></span>
-                                                    <div class="form-control-label ms-2 current-date" style="font-weight: 400";></div>
-                                                </label>
-                                                <label class="form-checkbox-input d-block mb-1">
-                                                    <input id="otherDateCheck" type="radio" name="radio" />
-                                                    <span class="checkmark"></span>
-                                                    <label for="expenseDate" class="form-control-label mb-1 ms-2" style="font-weight: 400";>Inna:</label>
-                                                    <input id="expenseDate" type="date" class="form-control"/>
-                                                </label> 
-                                            </form>
+                                    </div> 
+                                    <div class="col-md-6">
+                                        <div class="form-group w-100">
+                                            <label for="expenseDate" class="form-check-label d-block mb-2">Data</label>
+                                            <input id="expenseDate" type="date" value="" class="form-control"/>
                                         </div>
                                     </div>
                                 </div>
